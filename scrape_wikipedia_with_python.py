@@ -1,0 +1,13 @@
+import wikipedia as wiki
+print(wiki.search("Python"))
+print(wiki.suggest("Pyth"))
+print(wiki.summary("Python (programming language)"))
+wiki.set_lang("fr")
+print(wiki.summary("Python (programming language)"))
+wiki.set_lang("en")
+p = wiki.page("Python (programming language)")
+print(p.title)
+print(p.url)
+print(p.content)
+print(p.images)
+print(p.links)
